@@ -32,6 +32,8 @@ The general workflow for this project as shown below:
 |Train|0.99| 0.99 |686|4|606|4|
 |Validation|0.97| 0.98 |225|5|195|6|
 |Test|0.98| 0.98 |228|2|192|8|
+
+
 The metrics on the training set is to observe how well the model progress in terms of its training while metrics on the validation set is a measure of the quality of the model and its ability to make new predictions for unseen data. 
 
 Initally, the training loss is higher because it was artificially made harder for the model to give the right answers by introducing data augmentation to the train data. However, during validation all of the units are available, so the network has its full computational power - and thus it might perform better than in training. Towards the end of the training, the accuracy of the train and validation becomes similar, the difference between the losses became similar too. 
